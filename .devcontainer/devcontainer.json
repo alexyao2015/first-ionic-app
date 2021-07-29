@@ -5,7 +5,8 @@
 	  ],
 	"service": "ionicapp",
 	"workspaceFolder": "/workspace",
-	"postCreateCommand": "/bin/bash .devcontainer/install-dev-tools.sh",
+	"postCreateCommand": "/bin/bash -c 'find .devcontainer -type f -print0 | xargs -0 -n 1 -P 4 dos2unix && .devcontainer/install-dev-tools.sh'",
+	"postStartCommand": "/bin/bash -c '.devcontainer/start-dev-tools.sh'",
 	"extensions": [
 		"visualstudioexptteam.vscodeintellicode",
 		"formulahendry.auto-rename-tag",

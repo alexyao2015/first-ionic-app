@@ -53,7 +53,8 @@
   },
   "scripts": {
     "start": "ionic serve --external --lab",
-    "build": "react-scripts build",
+    "build": "ionic build",
+    "buildprod": "ionic build --prod",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
