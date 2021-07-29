@@ -5,6 +5,7 @@
 	  ],
 	"service": "ionicapp",
 	"workspaceFolder": "/workspace",
+	"postCreateCommand": "/bin/bash .devcontainer/install-dev-tools.sh",
 	"extensions": [
 		"visualstudioexptteam.vscodeintellicode",
 		"formulahendry.auto-rename-tag",
