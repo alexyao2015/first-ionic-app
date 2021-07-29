@@ -15,7 +15,8 @@
     "github.remotehub",
     "quicktype.quicktype",
     "ms-azuretools.vscode-docker",
-    "vscode-icons-team.vscode-icons"
+    "vscode-icons-team.vscode-icons",
+    "ionic-preview.ionic-preview"
   ],
   "settings": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
