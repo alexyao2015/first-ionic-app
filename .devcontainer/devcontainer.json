@@ -1,33 +1,34 @@
 {
-	"name": "ionicapp",
-	"dockerComposeFile": [
-		"docker-compose-vscode.yml"
-	  ],
-	"service": "ionicapp",
-	"workspaceFolder": "/workspace",
-	"postCreateCommand": "/bin/bash -c 'find .devcontainer -type f -print0 | xargs -0 -n 1 -P 4 dos2unix && .devcontainer/install-dev-tools.sh'",
-	"postStartCommand": "/bin/bash -c '.devcontainer/start-dev-tools.sh'",
-	"extensions": [
-		"visualstudioexptteam.vscodeintellicode",
-		"formulahendry.auto-rename-tag",
-		"aaron-bond.better-comments",
-		"stevencl.adddoccomments",
-		"esbenp.prettier-vscode",
-		"eamodio.gitlens",
-		"github.remotehub",
-		"quicktype.quicktype",
-		"ms-azuretools.vscode-docker",
-		"vscode-icons-team.vscode-icons",
-	],
-	"settings": {
-		"editor.formatOnPaste": false,
-		"editor.formatOnSave": true,
-		"editor.formatOnType": true,
-		"files.trimTrailingWhitespace": true,
-		"terminal.integrated.profiles.linux": {
-			"bash": {
-				"path": "/bin/bash"
-			}
-		},
-	}
+  "name": "ionicapp",
+  "dockerComposeFile": ["docker-compose-vscode.yml"],
+  "service": "ionicapp",
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "/bin/bash -c 'find .devcontainer -type f -print0 | xargs -0 -n 1 -P 4 dos2unix && .devcontainer/install-dev-tools.sh'",
+  "postStartCommand": "/bin/bash -c '.devcontainer/start-dev-tools.sh'",
+  "extensions": [
+    "visualstudioexptteam.vscodeintellicode",
+    "formulahendry.auto-rename-tag",
+    "aaron-bond.better-comments",
+    "stevencl.adddoccomments",
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens",
+    "github.remotehub",
+    "quicktype.quicktype",
+    "ms-azuretools.vscode-docker",
+    "vscode-icons-team.vscode-icons"
+  ],
+  "settings": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "javascript.format.enable": true,
+    "json.format.enable": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "files.trimTrailingWhitespace": true,
+    "terminal.integrated.profiles.linux": {
+      "bash": {
+        "path": "/bin/bash"
+      }
+    }
+  }
 }
