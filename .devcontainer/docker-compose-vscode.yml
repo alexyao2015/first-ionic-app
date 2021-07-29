@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  ionicapp:
+    build:
+      context: ../
+      dockerfile: ./.devcontainer/Dockerfile
+      target: dev_base
+    restart: "no"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    ports:
+      - "8100:8100"
+      - "8200:8200"
+    volumes:
+      - ..:/workspace
+    command: /bin/bash .devcontainer/install-dev-tools.sh

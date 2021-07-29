@@ -1,0 +1,30 @@
+{
+	"name": "ionicapp",
+	"dockerComposeFile": [
+		"docker-compose-vscode.yml"
+	  ],
+	"service": "ionicapp",
+	"workspaceFolder": "/workspace",
+	"extensions": [
+		"visualstudioexptteam.vscodeintellicode",
+		"formulahendry.auto-rename-tag",
+		"aaron-bond.better-comments",
+		"stevencl.adddoccomments",
+		"esbenp.prettier-vscode",
+		"eamodio.gitlens",
+		"github.remotehub",
+		"quicktype.quicktype",
+		"ms-azuretools.vscode-docker",
+	],
+	"settings": {
+		"editor.formatOnPaste": false,
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+		"files.trimTrailingWhitespace": true,
+		"terminal.integrated.profiles.linux": {
+			"bash": {
+				"path": "/bin/bash"
+			}
+		},
+	}
+}
