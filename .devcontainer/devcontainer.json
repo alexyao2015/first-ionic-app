@@ -12,10 +12,8 @@
     "stevencl.adddoccomments",
     "esbenp.prettier-vscode",
     "eamodio.gitlens",
-    "github.remotehub",
     "quicktype.quicktype",
     "ms-azuretools.vscode-docker",
-    "vscode-icons-team.vscode-icons",
     "ionic-preview.ionic-preview"
   ],
   "settings": {
