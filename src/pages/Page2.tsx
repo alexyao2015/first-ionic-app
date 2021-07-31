@@ -7,6 +7,7 @@ import {
 } from "@ionic/react";
 import ExploreContainer from "../components/ExploreContainer";
 import "./Page2.scss";
+import ScrollingBox from "../components/ScrollingBox";
 
 const Page2: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const Page2: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <ExploreContainer pageName="Page2" />
+        <ScrollingBox color="green" />
       </IonContent>
     </IonPage>
   );

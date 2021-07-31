@@ -6,20 +6,20 @@ import {
   IonToolbar,
 } from "@ionic/react";
 import ExploreContainer from "../components/ExploreContainer";
-import "./Home.css";
+import "./Home.scss";
 
 const Home: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Blasdfank</IonTitle>
+          <IonTitle>Blank</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">joijio</IonTitle>
+            <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
         <ExploreContainer pageName="Home" />
