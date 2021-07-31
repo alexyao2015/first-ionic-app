@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  ionicapp:
+    build:
+      context: ../
+      dockerfile: ./.devcontainer/Dockerfile
+      target: dev_base
+    restart: "no"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - CHOKIDAR_INTERVAL=1000
+    ports:
+      - "5000:5000"
+      - "8100:8100"
+      - "8200:8200"
+    volumes:
+      - ..:/workspace
+    command: /bin/bash -c 'find .devcontainer -type f -print0 | xargs -0 -n 1 -P 4 dos2unix && .devcontainer/install-dev-tools.sh && .devcontainer/start-dev-tools.sh'
